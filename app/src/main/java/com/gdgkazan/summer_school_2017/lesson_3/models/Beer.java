@@ -35,9 +35,6 @@ public class Beer {
 
     private BeerVolume volume;
 
-    @SerializedName("food_pairing")
-    private ArrayList<String> foodPairing;
-
     public long getId() {
         return id;
     }
@@ -118,11 +115,4 @@ public class Beer {
         this.volume = volume;
     }
 
-    public ArrayList<String> getFoodPairing() {
-        return foodPairing;
-    }
-
-    public void setFoodPairing(ArrayList<String> foodPairing) {
-        this.foodPairing = foodPairing;
-    }
 }
