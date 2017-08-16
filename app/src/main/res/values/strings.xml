@@ -1,9 +1,23 @@
 <resources>
     <string name="app_name">Summer school 2017</string>
 
-    <string name="menu.network">Урок 3.Работа с сетью</string>
+    <!-- Main screen -->
+    <string name="main.lessons">Занятия</string>
+    <string name="main.lesson1.title">Урок 1</string>
+    <string name="main.lesson1.subtitle">XML. Верстка</string>
+    <string name="main.lesson2.title">Урок 2</string>
+    <string name="main.lesson2.subtitle">Activity. RecyclerView</string>
+    <string name="main.lesson3.title">Урок 3</string>
+    <string name="main.lesson3.subtitle">Работа с сетью</string>
 
-    <!-- Beer screen -->
+    <!-- Lesson 1. XML -->
+    <string name="lesson1.frame_layout">Frame Layout</string>
+    <string name="lesson1.linear_layout">Linear Layout</string>
+    <string name="lesson1.relative_layout">Linear Layout</string>
+    <string name="lesson1.margin">Margin</string>
+    <string name="lesson1.padding">Padding</string>
+
+    <!-- Lesson 3. Beer screen -->
     <string name="beer.abv">abv</string>
     <string name="beer.ibu">ibu</string>
     <string name="beer.srm">srm</string>

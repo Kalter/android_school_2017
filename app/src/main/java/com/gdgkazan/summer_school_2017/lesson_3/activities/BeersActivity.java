@@ -56,7 +56,7 @@ public class BeersActivity extends AppCompatActivity {
 
         // Создаем сервис через который будет выполняться запрос
         beerService = ApiFactory.getRetrofitInstance().create(BeerService.class);
-        fetchRandomBeer();
+        fetchBeerWithFilter("11-2012", 6);
     }
 
     private void initViews() {
@@ -106,6 +106,84 @@ public class BeersActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void fetchBeerWithFilter(String date, int abvGt) {
+        // Создаем экземпляр запроса со всем необходимыми настройками
+        Call<List<Beer>> call = beerService.getBeerWithFilter(date, abvGt);
+
+        // Отображаем progress bar
+        loadingDialog.show();
+
+        // Выполняем запрос асинхронно
+        call.enqueue(new Callback<List<Beer>>() {
+
+            // В случае если запрос выполнился успешно, то мы переходим в метод onResponse(...)
+            @Override
+            public void onResponse(@NonNull Call<List<Beer>> call, @NonNull Response<List<Beer>> response) {
+                if (response.isSuccessful()) {
+                    // Если в ответ нам пришел код 2xx, то отображаем содержимое запроса
+                    fillBeerInfo(response.body().get(0));
+
+                } else {
+                    // Если пришел код ошибки, то обрабатываем её
+                    Toast.makeText(BeersActivity.this, R.string.network_error, Toast.LENGTH_SHORT).show();
+                }
+
+                // Скрываем progress bar
+                loadingDialog.dismiss();
+            }
+
+            // Если запрос не удалось выполнить, например, на телефоне отсутствует подключение к интернету
+            @Override
+            public void onFailure(@NonNull Call<List<Beer>> call, @NonNull Throwable t) {
+                // Скрываем progress bar
+                loadingDialog.dismiss();
+
+                Toast.makeText(BeersActivity.this, R.string.network_error, Toast.LENGTH_SHORT).show();
+                Log.d("Error", t.getMessage());
+            }
+        });
+    }
+
+
+    private void fetchBeerById(long id) {
+        // Создаем экземпляр запроса со всем необходимыми настройками
+        Call<List<Beer>> call = beerService.getBeerById(id);
+
+        // Отображаем progress bar
+        loadingDialog.show();
+
+        // Выполняем запрос асинхронно
+        call.enqueue(new Callback<List<Beer>>() {
+
+            // В случае если запрос выполнился успешно, то мы переходим в метод onResponse(...)
+            @Override
+            public void onResponse(@NonNull Call<List<Beer>> call, @NonNull Response<List<Beer>> response) {
+                if (response.isSuccessful()) {
+                    // Если в ответ нам пришел код 2xx, то отображаем содержимое запроса
+                    fillBeerInfo(response.body().get(0));
+
+                } else {
+                    // Если пришел код ошибки, то обрабатываем её
+                    Toast.makeText(BeersActivity.this, R.string.network_error, Toast.LENGTH_SHORT).show();
+                }
+
+                // Скрываем progress bar
+                loadingDialog.dismiss();
+            }
+
+            // Если запрос не удалось выполнить, например, на телефоне отсутствует подключение к интернету
+            @Override
+            public void onFailure(@NonNull Call<List<Beer>> call, @NonNull Throwable t) {
+                // Скрываем progress bar
+                loadingDialog.dismiss();
+
+                Toast.makeText(BeersActivity.this, R.string.network_error, Toast.LENGTH_SHORT).show();
+                Log.d("Error", t.getMessage());
+            }
+        });
+    }
+
 
     private void fillBeerInfo(@NonNull Beer beer) {
         Picasso.with(this)
