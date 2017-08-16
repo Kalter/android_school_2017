@@ -9,6 +9,9 @@
     <string name="main.lesson2.subtitle">Activity. RecyclerView</string>
     <string name="main.lesson3.title">Урок 3</string>
     <string name="main.lesson3.subtitle">Работа с сетью</string>
+    <string name="main.homework">Домашние задания</string>
+    <string name="main.homework1.title">Задание 1</string>
+    <string name="main.homework1.subtitle">Калькулятор. Профиль пользователя</string>
 
     <!-- Lesson 1. XML -->
     <string name="lesson1.frame_layout">Frame Layout</string>
@@ -25,6 +28,20 @@
     <string name="beer.ibu">ibu</string>
     <string name="beer.srm">srm</string>
     <string name="beer.description">Описание</string>
+
+    <!-- Homework 1. XML -->
+    <string name="homework1.calculator">Калькулятор</string>
+    <string name="homework1.user_profile">Профиль пользователя</string>
+    <string name="user_profile.name">Сергей Швецов</string>
+    <string name="user_profile.email">sergey@mail.ru</string>
+    <string name="user_profile.profie">Мой профиль</string>
+    <string name="user_profile.messages">Сообщения</string>
+    <string name="user_profile.setting">Настройки</string>
+    <string name="user_profile.notifications.title">Уведомления</string>
+    <string name="user_profile.notifications.subtitle">Присылать уведомления</string>
+    <string name="user_profile.subscription.title">Подписка</string>
+    <string name="user_profile.subscription.subtitle">Присылать новости на e-mail</string>
+
 
     <!-- Network -->
     <string name="network.loading">Загрузка…</string>

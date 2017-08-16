@@ -28,6 +28,9 @@ dependencies {
 //  Позволяет использовать RecyclerView в проекте
     compile 'com.android.support:recyclerview-v7:25.3.1'
 
+//  Сircleimageview - библиотека позволяет закруглять изображения
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+
 //  GSON - упрощает работу с JSON файлами
     compile 'com.google.code.gson:gson:2.8.1'
 

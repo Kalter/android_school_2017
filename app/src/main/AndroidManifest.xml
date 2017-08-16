@@ -37,6 +37,14 @@
         <activity
             android:name=".lessons.lesson_3.activities.BeersActivity"
             android:screenOrientation="portrait" />
+
+        <activity android:name=".homeworks.homework_1.activities.FirstHomeworkActivity" />
+
+        <activity android:name=".homeworks.homework_1.activities.CalculatorActivity" />
+
+        <activity
+            android:name=".homeworks.homework_1.activities.UserProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.gdgkazan.summer_school_2017.homeworks.homework_1.activities.FirstHomeworkActivity;
 import com.gdgkazan.summer_school_2017.lessons.lesson_1.FirstLessonActivity;
 import com.gdgkazan.summer_school_2017.lessons.lesson_2.SecondLessonActivity;
 import com.gdgkazan.summer_school_2017.lessons.lesson_3.activities.BeersActivity;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.llLesson1).setOnClickListener(this);
         findViewById(R.id.llLesson2).setOnClickListener(this);
         findViewById(R.id.llLesson3).setOnClickListener(this);
+        findViewById(R.id.llHomework1).setOnClickListener(this);
     }
 
     @Override
@@ -36,6 +38,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.llLesson3:
                 startActivity(new Intent(MainActivity.this, BeersActivity.class));
+                break;
+            case R.id.llHomework1:
+                startActivity(new Intent(MainActivity.this, FirstHomeworkActivity.class));
                 break;
         }
     }
