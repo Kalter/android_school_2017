@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.gdgkazan.summer_school_2017.lesson_1.FirstLessonActivity;
+import com.gdgkazan.summer_school_2017.lesson_2.SecondLessonActivity;
 import com.gdgkazan.summer_school_2017.lesson_3.activities.BeersActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this, FirstLessonActivity.class));
                 break;
             case R.id.llLesson2:
+                startActivity(new Intent(MainActivity.this, SecondLessonActivity.class));
                 break;
             case R.id.llLesson3:
                 startActivity(new Intent(MainActivity.this, BeersActivity.class));

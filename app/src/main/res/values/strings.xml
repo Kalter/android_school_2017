@@ -17,6 +17,9 @@
     <string name="lesson1.margin">Margin</string>
     <string name="lesson1.padding">Padding</string>
 
+    <!-- Lesson 2. RecyclerView -->
+    <string name="lesson2.add_elements">Добавить 5 элементов</string>
+
     <!-- Lesson 3. Beer screen -->
     <string name="beer.abv">abv</string>
     <string name="beer.ibu">ibu</string>

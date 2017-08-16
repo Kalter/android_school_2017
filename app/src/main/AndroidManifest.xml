@@ -32,6 +32,8 @@
 
         <activity android:name=".lesson_1.PaddingActivity" />
 
+        <activity android:name=".lesson_2.SecondLessonActivity" />
+
         <activity
             android:name="com.gdgkazan.summer_school_2017.lesson_3.activities.BeersActivity"
             android:screenOrientation="portrait" />
