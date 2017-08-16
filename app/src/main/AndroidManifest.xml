@@ -20,22 +20,22 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".lesson_1.FirstLessonActivity" />
+        <activity android:name=".lessons.lesson_1.FirstLessonActivity" />
 
-        <activity android:name=".lesson_1.FrameLayoutActivity" />
+        <activity android:name=".lessons.lesson_1.FrameLayoutActivity" />
 
-        <activity android:name=".lesson_1.LinearLayoutActivity" />
+        <activity android:name=".lessons.lesson_1.LinearLayoutActivity" />
 
-        <activity android:name=".lesson_1.RelativeLayoutActivity" />
+        <activity android:name=".lessons.lesson_1.RelativeLayoutActivity" />
 
-        <activity android:name=".lesson_1.MarginActivity" />
+        <activity android:name=".lessons.lesson_1.MarginActivity" />
 
-        <activity android:name=".lesson_1.PaddingActivity" />
+        <activity android:name=".lessons.lesson_1.PaddingActivity" />
 
-        <activity android:name=".lesson_2.SecondLessonActivity" />
+        <activity android:name=".lessons.lesson_2.SecondLessonActivity" />
 
         <activity
-            android:name="com.gdgkazan.summer_school_2017.lesson_3.activities.BeersActivity"
+            android:name=".lessons.lesson_3.activities.BeersActivity"
             android:screenOrientation="portrait" />
     </application>
 

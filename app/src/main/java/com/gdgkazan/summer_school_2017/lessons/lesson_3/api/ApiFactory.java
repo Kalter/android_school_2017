@@ -1,4 +1,4 @@
-package com.gdgkazan.summer_school_2017.lesson_3.api;
+package com.gdgkazan.summer_school_2017.lessons.lesson_3.api;
 
 import android.support.annotation.NonNull;
 

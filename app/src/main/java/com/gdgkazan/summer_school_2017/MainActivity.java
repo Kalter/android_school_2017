@@ -5,9 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.gdgkazan.summer_school_2017.lesson_1.FirstLessonActivity;
-import com.gdgkazan.summer_school_2017.lesson_2.SecondLessonActivity;
-import com.gdgkazan.summer_school_2017.lesson_3.activities.BeersActivity;
+import com.gdgkazan.summer_school_2017.lessons.lesson_1.FirstLessonActivity;
+import com.gdgkazan.summer_school_2017.lessons.lesson_2.SecondLessonActivity;
+import com.gdgkazan.summer_school_2017.lessons.lesson_3.activities.BeersActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 

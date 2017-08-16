@@ -1,4 +1,4 @@
-package com.gdgkazan.summer_school_2017.lesson_3.activities;
+package com.gdgkazan.summer_school_2017.lessons.lesson_3.activities;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -11,9 +11,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.gdgkazan.summer_school_2017.R;
-import com.gdgkazan.summer_school_2017.lesson_3.api.ApiFactory;
-import com.gdgkazan.summer_school_2017.lesson_3.api.BeerService;
-import com.gdgkazan.summer_school_2017.lesson_3.models.Beer;
+import com.gdgkazan.summer_school_2017.lessons.lesson_3.api.ApiFactory;
+import com.gdgkazan.summer_school_2017.lessons.lesson_3.api.BeerService;
+import com.gdgkazan.summer_school_2017.lessons.lesson_3.models.Beer;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

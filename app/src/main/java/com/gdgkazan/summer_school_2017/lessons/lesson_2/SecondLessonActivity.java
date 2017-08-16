@@ -1,4 +1,4 @@
-package com.gdgkazan.summer_school_2017.lesson_2;
+package com.gdgkazan.summer_school_2017.lessons.lesson_2;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.gdgkazan.summer_school_2017.R;
-import com.gdgkazan.summer_school_2017.lesson_2.models.CapitalModel;
+import com.gdgkazan.summer_school_2017.lessons.lesson_2.models.CapitalModel;
 
 import java.util.ArrayList;
 import java.util.List;

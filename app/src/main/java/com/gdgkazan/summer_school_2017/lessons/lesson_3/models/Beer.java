@@ -1,8 +1,6 @@
-package com.gdgkazan.summer_school_2017.lesson_3.models;
+package com.gdgkazan.summer_school_2017.lessons.lesson_3.models;
 
 import com.google.gson.annotations.SerializedName;
-
-import java.util.ArrayList;
 
 /**
  * @author Timur Valiev

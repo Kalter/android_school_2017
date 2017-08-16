@@ -1,4 +1,4 @@
-package com.gdgkazan.summer_school_2017.lesson_1;
+package com.gdgkazan.summer_school_2017.lessons.lesson_1;
 
 import android.content.Intent;
 import android.os.Bundle;
