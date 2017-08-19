@@ -9,6 +9,8 @@
     <string name="main.lesson2.subtitle">Activity. RecyclerView</string>
     <string name="main.lesson3.title">Урок 3</string>
     <string name="main.lesson3.subtitle">Работа с сетью</string>
+    <string name="main.lesson4.title">Урок 4</string>
+    <string name="main.lesson4.subtitle">Manifest. Intent. Charts</string>
     <string name="main.homework">Домашние задания</string>
     <string name="main.homework1.title">Задание 1</string>
     <string name="main.homework1.subtitle">Калькулятор. Профиль пользователя</string>
@@ -29,6 +31,10 @@
     <string name="beer.srm">srm</string>
     <string name="beer.description">Описание</string>
 
+    <!-- Lesson 4 -->
+    <string name="lesson4.intent">Intent</string>
+    <string name="lesson4.charts">Графики</string>
+
     <!-- Homework 1. XML -->
     <string name="homework1.calculator">Калькулятор</string>
     <string name="homework1.user_profile">Профиль пользователя</string>
@@ -42,6 +48,13 @@
     <string name="user_profile.subscription.title">Подписка</string>
     <string name="user_profile.subscription.subtitle">Присылать новости на e-mail</string>
 
+    <!-- Homework 2. XML -->
+    <string name="homework2.activity">Activity</string>
+    <string name="homework2.counter">1. Счетчик</string>
+    <string name="homework2.who_wants_to_be_a_millionaire">2. Кто хочет стать миллионером</string>
+    <string name="homework2.recycler_view">RecyclerView</string>
+    <string name="homework2.countries">1. Страны</string>
+    <string name="homework2.posts">2. Посты</string>
 
     <!-- Network -->
     <string name="network.loading">Загрузка…</string>

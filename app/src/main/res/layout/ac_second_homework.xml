@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
-            android:text="@string/main.lessons"
+            android:text="@string/homework2.activity"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -84,28 +84,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/main.lesson3.subtitle" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/llLesson4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/main.lesson4.title"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/main.lesson4.subtitle" />
 
         </LinearLayout>
 

@@ -38,6 +38,12 @@
             android:name=".lessons.lesson_3.activities.BeersActivity"
             android:screenOrientation="portrait" />
 
+        <activity android:name=".lessons.lesson_4.activities.FourthLessonActivity" />
+
+        <activity android:name=".lessons.lesson_4.activities.IntentExampleActivity" />
+
+        <activity android:name=".lessons.lesson_4.activities.ChartsExampleActivity" />
+
         <activity android:name=".homeworks.homework_1.activities.FirstHomeworkActivity" />
 
         <activity android:name=".homeworks.homework_1.activities.CalculatorActivity" />

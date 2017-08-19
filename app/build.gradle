@@ -12,6 +12,8 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
 
+        buildConfigField "String", "WEATER_API_ID", '"b1b15e88fa797225412429c1c50c122a1"'
+
     }
     buildTypes {
         release {
@@ -48,4 +50,10 @@ dependencies {
 //  Picasso - библиотека для загрузки изображений из интернета по url
     compile 'com.squareup.picasso:picasso:2.5.2'
 
+//  Библиотека для отображения графиков
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+
+//  ButterKnife - позволяет инициализировать View через аннотации
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }

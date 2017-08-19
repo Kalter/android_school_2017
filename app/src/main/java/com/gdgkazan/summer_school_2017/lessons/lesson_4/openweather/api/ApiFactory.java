@@ -1,9 +1,9 @@
-package com.gdgkazan.summer_school_2017.lessons.lesson_3.api;
+package com.gdgkazan.summer_school_2017.lessons.lesson_4.openweather.api;
 
 import android.support.annotation.NonNull;
 
-import com.gdgkazan.summer_school_2017.BuildConfig;
 import com.facebook.stetho.okhttp3.StethoInterceptor;
+import com.gdgkazan.summer_school_2017.BuildConfig;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -15,7 +15,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public final class ApiFactory {
 
-    private static final String API_BASE_URL = "https://api.punkapi.com/v2/";
+    private static final String API_BASE_URL = "api.openweathermap.org/data/2.5/";
 
     private static Retrofit sRetrofit;
 
@@ -43,6 +43,7 @@ public final class ApiFactory {
             builder.addInterceptor(new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY));
             builder.addNetworkInterceptor(new StethoInterceptor());
         }
+        builder.addInterceptor(new AuthenticationInterceptor());
         return builder.build();
     }
 }

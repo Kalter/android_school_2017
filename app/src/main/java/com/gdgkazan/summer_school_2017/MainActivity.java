@@ -9,8 +9,9 @@ import com.gdgkazan.summer_school_2017.homeworks.homework_1.activities.FirstHome
 import com.gdgkazan.summer_school_2017.lessons.lesson_1.FirstLessonActivity;
 import com.gdgkazan.summer_school_2017.lessons.lesson_2.SecondLessonActivity;
 import com.gdgkazan.summer_school_2017.lessons.lesson_3.activities.BeersActivity;
+import com.gdgkazan.summer_school_2017.lessons.lesson_4.activities.FourthLessonActivity;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.llLesson1).setOnClickListener(this);
         findViewById(R.id.llLesson2).setOnClickListener(this);
         findViewById(R.id.llLesson3).setOnClickListener(this);
+        findViewById(R.id.llLesson4).setOnClickListener(this);
         findViewById(R.id.llHomework1).setOnClickListener(this);
     }
 
@@ -38,6 +40,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.llLesson3:
                 startActivity(new Intent(MainActivity.this, BeersActivity.class));
+                break;
+            case R.id.llLesson4:
+                startActivity(new Intent(MainActivity.this, FourthLessonActivity.class));
                 break;
             case R.id.llHomework1:
                 startActivity(new Intent(MainActivity.this, FirstHomeworkActivity.class));

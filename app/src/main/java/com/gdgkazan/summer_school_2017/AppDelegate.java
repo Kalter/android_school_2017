@@ -14,7 +14,6 @@ public class AppDelegate extends Application {
     public void onCreate() {
         super.onCreate();
 
-        ApiFactory.provideClient();
         if (BuildConfig.DEBUG) {
             Stetho.initializeWithDefaults(this);
         }
